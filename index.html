@@ -48,8 +48,21 @@
 			<div id="large-header" class="large-header">
 				<canvas id="demo-canvas"></canvas>
 				<div class="content center">
-					<div class="container">
-						<p>Hello, Welcome to My Site</p>
+					<div class="container" >
+						<script type="text/javascript">var i = 0;
+										var txt ='Hello!! Welcome to My Site.Find Out Things About me.';
+										var speed = 120;
+
+										function typeWriter() {
+										  if (i < txt.length) {
+
+										    document.getElementById("demotype").innerHTML += txt.charAt(i);
+										    i++;
+										    setTimeout(typeWriter, speed);
+										  }
+										}
+					</script>
+						<p id="demotype"><script type="text/javascript">typeWriter();</script></p>
 						<h1>Sanket Bailmare</h1>
 						<p>Undergrad B.E|Software Engineer</p>
 						<a href="#about-me">Read more</a>
@@ -152,6 +165,69 @@
 			</div>
 		</div>
 		<!-- End About Me Section -->
+		<!-- Start Experience Section -->
+		<div class="experiences center" id="experiences">
+			<div class="container">
+				<!-- Title -->
+				<div class="title wow fadeIn" data-wow-duration="0.5s" data-wow-offset="200">
+					<h2 class="h2">Educational Status</h2>
+					<div class="heading-line"></div>
+					<p class="main-para">Professionally expedite orthogonal deliverables with emerging best practices. Uniquely leverage other's robust core competencies.</p>
+				</div>	
+				<!-- start timeline -->
+				<div class="timeline wow fadeIn" data-wow-duration="0.5s" data-wow-offset="200">
+					<!-- Event No. 1 -->
+					<div class="timeline-block clearfix wow fadeInLeft" data-wow-duration="0.5s" data-wow-offset="200">
+						<div class="icon">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+						<div class="content left round-corners">
+							<h3>J.H.Ambani</h3>
+							<span class="duration">( June. 2013  )</span>
+							<span class="job-title">10th</span>
+							<p>I persued my primary Studies from J.H.Ambani School,Lodhivali a CBSE School known for all rounding performance.I passed the matricultion test with 9.6 CGPA</p>
+						</div>
+					</div>
+					<!-- Event No. 2 -->
+					<div class="timeline-block clearfix wow fadeInRight" data-wow-duration="0.5s" data-wow-offset="200">
+						<div class="icon">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+						<div class="content right round-corners">
+							<h3>J.H.Ambani</h3>
+							<span class="duration">( June. 2015 )</span>
+							<span class="job-title">12th</span>
+							<p>I persued my primary Studies from J.H.Ambani School,Lodhivali a CBSE School known for all rounding performance.I passed my +2 Grade  with 89.2% </p>
+						</div>
+					</div>
+					<!-- Event No. 3 -->
+					<div class="timeline-block clearfix wow fadeInLeft" data-wow-duration="0.5s" data-wow-offset="200">
+						<div class="icon">
+							<i class="fa fa-graduation-cap"></i>
+						</div>
+						<div class="content left round-corners">
+							<h3>S.I.E.S</h3>
+							<span class="duration">( Jan. 2017)</span>
+							<span class="job-title">FE Graduate</span>
+							<p>I persued my First year from S.I.E.S Graduate School of technology from nerul with a CGPA of 9.33</p>
+						</div>
+					</div>
+					<!-- Event No. 4 -->
+					<div class="timeline-block clearfix wow fadeInRight" data-wow-duration="0.5s" data-wow-offset="200">
+						<div class="icon">
+							<i class="fa fa-star"></i>
+						</div>
+						<div class="content right round-corners">
+							<h3>S.I.E.S</h3>
+							<span class="duration">( Jan. 2018  )</span>
+							<span class="job-title">SE Graduate</span>
+							<p>I persued my Second year from S.I.E.S Graduate School of technology from nerul with a CGPA of 8.5</p>
+						</div>
+					</div>
+				</div> <!-- End Timeline -->
+			</div>
+		</div>
+		<!-- End Experience Section -->
 
 		<!-- Start Fun Facts Section -->
 		<div class="fun-facts center" id="facts">
@@ -327,75 +403,7 @@
 		</div>
 		<!-- End Technical Skills Section -->
 
-		<!-- Start Experience Section -->
-		<div class="experiences center" id="experiences">
-			<div class="container">
-				<!-- Title -->
-				<div class="title wow fadeIn" data-wow-duration="0.5s" data-wow-offset="200">
-					<h2 class="h2">Educational Status</h2>
-					<div class="heading-line"></div>
-					<p class="main-para">Professionally expedite orthogonal deliverables with emerging best practices. Uniquely leverage other's robust core competencies.</p>
-				</div>	
-				<!-- start timeline -->
-				<div class="timeline wow fadeIn" data-wow-duration="0.5s" data-wow-offset="200">
-					<!-- Event No. 1 -->
-					<div class="timeline-block clearfix wow fadeInLeft" data-wow-duration="0.5s" data-wow-offset="200">
-						<div class="icon">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-						<div class="content left round-corners">
-							<h3>J.H.Ambani</h3>
-							<span class="duration">( June. 2013  )</span>
-							<span class="job-title">10th</span>
-							<p>I persued my primary Studies from J.H.Ambani School,Lodhivali a CBSE School known for all rounding performance.I passed the matricultion test with 9.6 CGPA</p>
-						</div>
-					</div>
-					<!-- Event No. 2 -->
-					<div class="timeline-block clearfix wow fadeInRight" data-wow-duration="0.5s" data-wow-offset="200">
-						<div class="icon">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-						<div class="content right round-corners">
-							<h3>J.H.Ambani</h3>
-							<span class="duration">( June. 2015 )</span>
-							<span class="job-title">12th</span>
-							<p>I persued my primary Studies from J.H.Ambani School,Lodhivali a CBSE School known for all rounding performance.I passed my +2 Grade  with 89.2% </p>
-						</div>
-					</div>
-					<!-- Event No. 3 -->
-					<div class="timeline-block clearfix wow fadeInLeft" data-wow-duration="0.5s" data-wow-offset="200">
-						<div class="icon">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-						<div class="content left round-corners">
-							<h3>S.I.E.S</h3>
-							<span class="duration">( Jan. 2017)</span>
-							<span class="job-title">FE Graduate</span>
-							<p>I persued my First year from S.I.E.S Graduate School of technology from nerul with a CGPA of 9.33</p>
-						</div>
-					</div>
-					<!-- Event No. 4 -->
-					<div class="timeline-block clearfix wow fadeInRight" data-wow-duration="0.5s" data-wow-offset="200">
-						<div class="icon">
-							<i class="fa fa-star"></i>
-						</div>
-						<div class="content right round-corners">
-							<h3>S.I.E.S</h3>
-							<span class="duration">( Jan. 2018  )</span>
-							<span class="job-title">SE Graduate</span>
-							<p>I persued my Second year from S.I.E.S Graduate School of technology from nerul with a CGPA of 8.5</p>
-						</div>
-					</div>
-				</div> <!-- End Timeline -->
-			</div>
-		</div>
-		<!-- End Experience Section -->
-
-		<!-- Start Quote Section -->
-		
-		<!-- End Quote Section -->
-
-		<!-- Start Portfolio Section -->
+				<!-- Start Portfolio Section -->
 		<div class="portfolio" id="portfolio">
 			<div class="container">
 				<!-- Title -->
@@ -848,7 +856,7 @@
 		<!-- End scroll percentage -->		
 		
 
-
+		
 		<!-- Including jQuery file -->
 		<script src="js/jquery-1.12.1.min.js"></script>
 		<!-- Including jQuery.appear file -->
