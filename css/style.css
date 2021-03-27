@@ -1,14 +1,5 @@
 
 /* ---------------------------------------
-
-Template Name: Marqa
-Description: Responsive HTML5 / CSS3 One-Page Portfolio-Resume Template
-Version: 1.3
-Author: Ahmed Beheiry 
-URL: https://themeforest.net/user/ahmedbeheiry
-
------------------------------------------
-
  =>  Table of Content  <=
 
  ( 1 ) Main Rules
@@ -319,15 +310,15 @@ span.bar {
 .menu.shown span.bar {background: #181818;}
 .menu.active-menu span.bar {background: #fff;}
 .active-menu .b1 {
-	-webkit-transform: rotate(-45deg) translate(-9px,7px);
-	-moz-transform: rotate(-45deg) translate(-9px,7px);
-	-o-transform: rotate(-45deg) translate(-9px,7px);
+	-webkit-transform: rotate(0) translate(-9px,7px);
+	-moz-transform: rotate(0) translate(-9px,7px);
+	-o-transform: rotate(0) translate(-9px,7px);
 }
 .active-menu .b2 {opacity: 0;}
 .active-menu .b3 {
-	-webkit-transform: rotate(45deg) translate(-7px,-6px);
-	-moz-transform: rotate(45deg) translate(-7px,-6px);
-	-o-transform: rotate(45deg) translate(-7px,-6px);
+	-webkit-transform: rotate(0) translate(-7px,-6px);
+	-moz-transform: rotate(0) translate(-7px,-6px);
+	-o-transform: rotate(0) translate(-7px,-6px);
 }
 .side-menu {
 	position: fixed;
@@ -373,8 +364,8 @@ span.bar {
 	width: 65%;
 	height: 4px;
 	background-color: #fff;
-	-webkit-transform: rotate3d(0,0,1,-15deg) scale3d(0,1,1);
-    transform: rotate3d(0,0,1,-15deg) scale3d(0,1,1);
+	-webkit-transform: rotate3d(0,0,0,0) scale3d(0,0,0);
+    transform: rotate3d(0,0,0,0) scale3d(0,0,0);
 	-webkit-transform-origin: 0 50%;
 	-ms-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
@@ -385,8 +376,8 @@ span.bar {
 }
 a.selected-item {color: #fff;}
 a.selected-item:before, .side-menu a:hover:before {
-	-webkit-transform: rotate3d(0,0,1,-15deg) scale3d(1,1,1);
-    transform: rotate3d(0,0,1,-15deg) scale3d(1,1,1);
+	-webkit-transform: rotate3d(0,0,0,0) scale3d(1,0,0);
+    transform: rotate3d(0,0,0,0) scale3d(0,0,0);
 }
 .side-menu a:hover {color: #fff;}
 
@@ -1253,6 +1244,11 @@ a.selected-item:before, .side-menu a:hover:before {
 	padding: 15px 0;
 }
 .footer .copyright h6 {
+	color: #777;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+#privacy{
 	color: #777;
 	font-weight: 400;
 	letter-spacing: 1.5px;

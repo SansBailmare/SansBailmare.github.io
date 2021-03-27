@@ -1,11 +1,6 @@
 /* global $, alert, console*/
 
-/* ---------------------------------------------------
-Template Name: Marqa
-Description: Responsive HTML5 / CSS3 One-Page Portfolio-Resume Template
-Version: 1.3
-Author: Ahmed Beheiry 
-URL: https://themeforest.net/user/ahmedbeheiry
+/* 
 
 /* ---------------------------------------------------
 	*** Table Of Content:
@@ -101,27 +96,6 @@ URL: https://themeforest.net/user/ahmedbeheiry
 		}
 	});
 
-	/* ---------------------------------------------------
-		6 - Scroll Percentage
-	----------------------------------------------------- */
-	var scrollTimer = null;
-	$(window).on("scroll", function() {
-		var viewportHeight = $(this).height(),
-			scrollbarHeight = viewportHeight / $(document).height() * viewportHeight,
-			progress = $(this).scrollTop() / ($(document).height() - viewportHeight),
-			distance = progress * (viewportHeight - scrollbarHeight) + scrollbarHeight / 2 - $("#scroll").height() / 2;
-		$("#scroll")
-			.css("top", distance)
-			.text(" (" + Math.round(progress * 100) + "%)")
-			.fadeIn(100);
-
-		if (scrollTimer !== null) {
-			clearTimeout(scrollTimer);
-		}
-		scrollTimer = setTimeout(function() {
-			$("#scroll").fadeOut();
-		}, 800);
-	});
 
 	/* ---------------------------------------------------
 		7 - Accordion in About-me Section 
